@@ -1,0 +1,92 @@
+{% load static wagtailuserbar %}
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>
+        {% block title %} {% if self.seo_title %}{{ self.seo_title }}{% else %}{{ self.title }}{% endif %} {% endblock %} {% block title_suffix %} {% with self.get_site.site_name as site_name %} {% if site_name %}- {{ site_name }}{% endif %} {% endwith %} 
+        {% endblock %}
+    </title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" /> {# Global stylesheets #}
+    <link rel="stylesheet" href="{% static 'css/main.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/custom.css' %}"> {% block extra_css %} {# Override this in templates to add extra stylesheets #} {% endblock %}
+</head>
+
+<body class="is-preload">
+    {% wagtailuserbar %}
+    <div id="wrapper">
+        <!-- Main -->
+        <div id="main">
+            <div class="inner">
+                <!-- Header -->
+
+                {% block content %}{% endblock %}
+            </div>
+        </div>
+        <!-- Sidebar -->
+        <div id="sidebar">
+            <div class="inner">
+                <!-- Search -->
+                <!--
+        <section id="search" class="alt">
+          <form method="post" action="#">
+            <input type="text" name="query" id="query" placeholder="Search" />
+          </form>
+        </section>
+        -->
+                <!-- Menu -->
+                <nav id="menu">
+                    <header class="major">
+                        <h2>메뉴</h2>
+                    </header>
+                    <ul>
+                        <li><a href="/">처음화면</a></li>
+                        <li>
+                            <span class="opener">저자소개</span>
+                            <ul>
+                                <li><a href="/profile">약력</a></li>
+                                <li><a href="#">설교집 추천사</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="opener">설교집</span>
+                            <ul>
+                                <li><a href="/sermons-by-numbers">출판 순서대로</a></li>
+                                <li><a href="/sermons-by-scripture">본문 순서대로</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/exposition-on-scripture">성경강해</a>
+                        </li>
+                        <li><a href="/theology-series">간추린 신학</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- Section -->
+                <section>
+                    <header class="major">
+                        <h2>연락처</h2>
+                    </header>
+                    <p>웹사이트에 대한 문의나, 인쇄된 설교집을 받아보고 싶으신 분들은 연락 바랍니다.</p>
+                    <ul class="contact">
+                        <li class="icon solid fa-envelope"><a href="#">427030@gmail.com</a></li>
+                        <li class="icon solid fa-phone">(213) 284-4020</li>
+                    </ul>
+                </section>
+
+            </div>
+        </div>
+    </div>
+    {# Global javascript #}
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/browser.min.js' %}"></script>
+    <script src="{% static 'js/breakpoints.min.js' %}"></script>
+    <script src="{% static 'js/util.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/leeyongkyu.js' %}"></script>
+    {% block extra_js %} {# Override this in templates to add extra javascript #} {% endblock %}
+</body>
+
+</html>

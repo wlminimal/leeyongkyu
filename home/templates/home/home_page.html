@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<header id="header">
+          <a href="#" class="logo"><strong>故 이용규 목사</strong> 설교집</a>
+        </header>
+<section>
+<div class="content">
+	<div class="row">
+		<div class="col-6 col-12-small">
+			<header>
+				<h1>{{ page.header_text1 }}<br />
+				{{ page.header_text2 }}</h1>
+				<p>{{ page.paragraph1 }}</p>
+			</header>
+			<p>{{ page.paragraph2 }}</p>
+			<ul class="actions">
+				<li><a href="/sermons-by-numbers" class="button big">{{ page.button_text }}</a></li>
+			</ul>
+		</div>
+		<div class="col-6 col-12-small">
+			<img class="image fit home-image" src="{% static '/images/leeyongkyu.png'%}">
+		</div>
+	</div>
+	
+	
+	
+	<!--
+	<span class="image main">
+		<img src="{% static 'images/cover.png' %}"
+	</span>
+	-->
+</div>
+
+</section>
+{% endblock content %}

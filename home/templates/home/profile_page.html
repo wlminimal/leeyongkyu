@@ -1,0 +1,38 @@
+{% extends "base.html" %} {% load static %} {% block content %}
+<header id="header">
+    <a href="#" class="logo"><strong>故 이용규 목사</strong> 약력</a>
+</header>
+<section>
+    <div class="content">
+        <div class="row">
+            <div class="col-6 col-12-small">
+                <img class="image fit profile-image" src="{% static '/images/leeyongkyu2.png'%}" </div>
+                <div class="text-block">
+                    <h4>故 이용규 목사</h4>
+                    <p>1932년 11월 10일 출생</p>
+                    <p>2016년 11월 10일 소천</p>
+                </div>
+
+            </div>
+            <div class="col-6 col-12-small">
+                <h3>저자 약력</h3>
+                <ul>
+                    <li>동아대학교 사학과 졸업(B.A.)</li>
+                    <li>고려 신학대학원 졸업(M.Div.)</li>
+                    <li>미국 Philadelphia Faith 신학대학원 졸업(종교 교육학 박사)</li>
+                    <li>평화 고등학교 교사</li>
+                    <li>고려 고등 성경학교 교사</li>
+                    <li>미국 기독교 종합 대학교 신학 대학원 교수</li>
+                    <li>계약 신학 대학원 대학교 교수</li>
+                </ul>
+                <h3>60여년 목회에 전념</h3>
+                <ul>
+                    <li>부산 범일교회 시무</li>
+                    <li>서울 성동교회 시무</li>
+                    <li>서울 명륜교회 시무</li>
+                    <li>LA 동부장로 교회 개척, 시무(1973~2016)</li>
+                </ul>
+            </div>
+        </div>
+</section>
+{% endblock content %}
