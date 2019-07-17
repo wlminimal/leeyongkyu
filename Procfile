@@ -1,1 +1,1 @@
-web: gunicorn everydaylimo.wsgi --log-file -
+web: gunicorn leeyongkyu.wsgi --log-file -
