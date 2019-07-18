@@ -1,175 +1,206 @@
-@font-face {
-    font-family: "SourceHanSerif";
-    src: url("../fonts/SourceHanSerifK-Regular.otf")
-}
-
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-    font-family: 'SourceHanSerif';
-}
-
-#menu ul a,
-#menu ul span {
-    font-family: 'SourceHanSerif';
-    border-bottom: 0;
-    color: inherit;
-    cursor: pointer;
-    display: block;
-    font-size: 1.2em;
-    padding: 0.625em 0;
-}
-
-#header .logo {
-    border-bottom: 0;
-    color: inherit;
-    font-family: 'SourceHanSerif';
-    font-size: 1.125em;
-}
-
-#menu>ul>li>ul a,
-#menu>ul>li>ul span {
-    font-size: 1.0em;
-}
-
-#menu>ul>li>ul {
-    color: #000;
-    display: none;
-    margin: 0.5em 0 1.5em 0;
-    padding-left: 1em;
-}
-
-input[type="submit"],
-input[type="reset"],
-input[type="button"],
-button,
-.button {
-    font-family: 'SourceHanSerif';
-}
-
-header p {
-    font-family: 'SourceHanSerif';
-    font-size: 1em;
-    font-weight: 400;
-    letter-spacing: 0.075em;
-    margin-top: -0.5em;
-    text-transform: uppercase;
-}
-
-
-/*#profile {
+            @font-face {
+            font-family: "SourceHanSerif";
+            src: url("../fonts/SourceHanSerifK-Regular.otf")
+        }
+        
+        html,
+        body,
+        div,
+        span,
+        applet,
+        object,
+        iframe,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        blockquote,
+        pre,
+        a,
+        abbr,
+        acronym,
+        address,
+        big,
+        cite,
+        code,
+        del,
+        dfn,
+        em,
+        img,
+        ins,
+        kbd,
+        q,
+        s,
+        samp,
+        small,
+        strike,
+        strong,
+        sub,
+        sup,
+        tt,
+        var,
+        b,
+        u,
+        i,
+        center,
+        dl,
+        dt,
+        dd,
+        ol,
+        ul,
+        li,
+        fieldset,
+        form,
+        label,
+        legend,
+        table,
+        caption,
+        tbody,
+        tfoot,
+        thead,
+        tr,
+        th,
+        td,
+        article,
+        aside,
+        canvas,
+        details,
+        embed,
+        figure,
+        figcaption,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        output,
+        ruby,
+        section,
+        summary,
+        time,
+        mark,
+        audio,
+        video {
+            font-family: 'SourceHanSerif';
+        }
+        
+        #menu ul a,
+        #menu ul span {
+            font-family: 'SourceHanSerif';
+            border-bottom: 0;
+            color: inherit;
+            cursor: pointer;
+            display: block;
+            font-size: 1.2em;
+            padding: 0.625em 0;
+        }
+        
+        #header .logo {
+            border-bottom: 0;
+            color: inherit;
+            font-family: 'SourceHanSerif';
+            font-size: 1.125em;
+        }
+        
+        #menu>ul>li>ul a,
+        #menu>ul>li>ul span {
+            font-size: 1.0em;
+        }
+        
+        #menu>ul>li>ul {
+            color: #000;
+            display: none;
+            margin: 0.5em 0 1.5em 0;
+            padding-left: 1em;
+        }
+        
+        input[type="submit"],
+        input[type="reset"],
+        input[type="button"],
+        button,
+        .button {
+            font-family: 'SourceHanSerif';
+        }
+        
+        header p {
+            font-family: 'SourceHanSerif';
+            font-size: 1em;
+            font-weight: 400;
+            letter-spacing: 0.075em;
+            margin-top: -0.5em;
+            text-transform: uppercase;
+        }
+        /*#profile {
     width: 50%;
 }*/
-
-.sermon-list {
-    list-style: none;
-    margin-left: -1.3em;
-}
-
-#main>.inner>section {
-    padding: 2em 0 3em 0;
-}
-
-.home-image {
-    max-width: 500px;
-}
-
-.profile-image {
-    max-width: 300px;
-}
-
-.text-block {
-    text-align: center;
-    max-width: 300px;
-}
-
-.text-block h4 {
-    line-height: 80%;
-}
-
-.text-block p {
-    line-height: 80%;
-    margin: 0 0 1em 0;
-}
-
-.not-ready {
-    color: red;
-}
+        
+        .sermon-list {
+            list-style: none;
+            margin-left: -1.3em;
+        }
+        
+        #main>.inner>section {
+            padding: 2em 0 3em 0;
+        }
+        
+        .home-image {
+            max-width: 500px;
+        }
+        
+        .profile-image {
+            max-width: 300px;
+        }
+        
+        .text-block {
+            text-align: center;
+            max-width: 300px;
+        }
+        
+        .text-block h4 {
+            line-height: 80%;
+        }
+        
+        .text-block p {
+            line-height: 80%;
+            margin: 0 0 1em 0;
+        }
+        
+        .not-ready {
+            color: red;
+        }
+        
+        input[type="submit"],
+        input[type="reset"],
+        input[type="button"],
+        button,
+        .button {
+            font-family: 'SourceHanSerif';
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            -ms-appearance: none;
+            appearance: none;
+            -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+            -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+            -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+            transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+            background-color: transparent;
+            border-radius: 0.375em;
+            border: 0;
+            border-bottom-color: currentcolor;
+            box-shadow: inset 0 0 0 2px #3f6e6b;
+            color: #3f6e6b !important;
+            cursor: pointer;
+            display: inline-block;
+            font-size: 1em;
+            font-weight: 700;
+            height: 6.5em;
+            letter-spacing: 1.075em;
+            line-height: 6.5em;
+            padding: 0 2.25em;
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;
+            white-space: nowrap;
