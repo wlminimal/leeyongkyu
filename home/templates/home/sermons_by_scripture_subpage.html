@@ -1,0 +1,13 @@
+{% extends "base.html" %} {% load static leeyongkyu_tags %} 
+
+{% block content %}
+<header id="header">
+    <a href="#" class="logo"><strong>故 이용규 목사</strong> 설교집 - 본문 순서대로</a>
+</header>
+<section>
+    <h3>{{ page.title }}</h2>
+    <div class="content">
+        {% snippet_tags %}
+    </div>
+</section>
+{% endblock content %}

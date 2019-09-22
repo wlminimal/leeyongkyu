@@ -1,0 +1,9 @@
+<div class="row">
+    <div class="col-6 col-12-medium">
+        <ul class="sermon-list">
+            {% for snippet in snippets %}
+            <li><a target="_blank" href="{{ snippet.sermon_link }}">{{ snippet.sermon_scripture }} - {{ snippet.sermon_title }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
